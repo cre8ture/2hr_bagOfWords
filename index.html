@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag of Words Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<body>
+    <div id="container">
+        <div id="left-content">
+            <h1>Bag of Words (BoW) Example</h1>
+            <code>The Bag of Words (BoW) is a basic natural language processing (NLP) technique used for text analysis and document classification. It represents text as a collection of words, ignoring the order and structure of the words within the text. In a BoW model, each unique word in a document is treated as a feature, and the frequency of each word is used to create a numerical vector representation. BoW is often used in NLP tasks like sentiment analysis, text classification, and information retrieval because it simplifies text data, making it suitable for machine learning algorithms to process and analyze textual information efficiently.</code>
+            <textarea id="input-text" placeholder="Enter your text here..."></textarea>
+        </div>
+        <div id="right-content">
+            <div id="result">
+                <h2>Bag of Words Representation:</h2>
+                <ul id="bow-list"></ul>
+                <hr/>
+                <div id="bow-vector"></div>
+                <div id="bow-chart"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="visualize.js"></script>
+
+</body>
+
+</html>

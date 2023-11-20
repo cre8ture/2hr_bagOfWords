@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#input-text {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+#result {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#container {
+    display: flex;
+    background-color: #f2f2f2; /* Background color for the whole container */
+}
+
+#left-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #a8dadc; /* Background color for the left side */
+}
+
+#right-content {
+    flex: 1;
+    padding: 20px;
+    background-color: cornflowerblue; /* Background color for the right side */
+}
+
+#bow-vector {
+    overflow-wrap: break-word; /* Enable word wrapping */
+}
+
+/* Media query to stack content below 800px screen width */
+@media (max-width: 800px) {
+    #container {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    #left-content, #right-content {
+        width: 100%; /* Full width for both sides */
+    }
+}
+
+li {
+    list-style-type: none; /* Remove bullet dots */
+}
